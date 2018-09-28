@@ -1,0 +1,28 @@
+<body>
+<style>
+    body{
+        background-color: black;
+        color: red;
+        text-align: left;
+        font-size: 100px;
+    }
+    ul{
+        list-style: none;
+    }
+</style>
+<ul><li></li><li></li></ul>
+<script>
+    var c = document.getElementsByTagName("UL")[0];
+    var y = c.getElementsByTagName("LI");
+    var j = 0;
+    y[0].innerHTML=j+"%";
+    y[1].innerHTML="";
+    var timer = setInterval(function(){ ++j;
+    y[0].innerHTML=j+"%";
+    y[1].innerHTML=y[1].innerHTML + "&#x258F";
+    if(j>100){
+    clearInterval(timer);
+    c.innerHTML='Ashik<a href="https://132-vtr-wcbrd-231.github.io/octo/terabit.html"><img src="https://132-vtr-wcbrd-231.github.io/octo/heart-shape.png" height="100px" width="80px"></a>Rekha'
+    }},50);
+</script>
+</body>
